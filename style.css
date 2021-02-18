@@ -1,0 +1,126 @@
+body {
+    /* background:#000; */
+    color: white;
+    font-family:"Helvetica";
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.info a {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+div.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+div.greeting-box {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+div.main-box {
+    display: inline-block;
+    border-left: 1px solid white;
+    padding-left: 15px;
+}
+
+
+#footer-links {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer-links li {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul.info, ul.social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+a.footer-link,a.body-link {
+    color: white;
+}
+
+.link-btn:hover {
+    /* background-color: white; */
+    animation: fadeInMainBtn ease 0.15s;
+    animation-fill-mode: forwards;
+}
+
+/* Links for main - side by side */
+.link-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    display: block;
+    float: left;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5%;
+}
+
+/* Links for footer - side by side */
+.footer-link {   
+    display: block;
+    float: left;
+    color: white;
+}
+
+.social-media img {
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+    border: 3px solid transparent;
+}
+.social-media img:hover {
+    animation: fadeInFooterSocials ease 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInMainBtn {
+    0% {
+        border: 1px solid white;
+        margin: 10px;
+    }
+    50% {
+        border: 2px solid white;
+        margin: 9px;
+    }
+    100% {
+        border: 3px solid white;
+        margin: 8px;
+    }
+}
+
+@keyframes fadeInFooterSocials {
+    0% {border-color: transparent;}
+    100% {border-color: white;}
+}
